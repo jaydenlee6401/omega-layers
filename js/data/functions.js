@@ -325,12 +325,12 @@ var functions = {
         do
         {
             if(!confirm("Are you " + "really ".repeat(confirmations) + "sure? There is no reward. " +
-                "Click " + (3 - confirmations) + " more " + (confirmations >= 2 ? "time" : "times") + " to confirm."))
+                "Click " + (5 - confirmations) + " more " + (confirmations >= 4 ? "time" : "times") + " to confirm."))
             {
                 return;
             }
             confirmations++;
-        } while(confirmations < 3)
+        } while(confirmations < 5)
 
         localStorage.setItem("OmegaLayers", null);
         game.currentLayer = null;
