@@ -38,7 +38,7 @@ class Utils
         return Decimal.max(buyable[buyable instanceof AbstractUpgrade ? "level" : "bought"], finalLvl);
     }
 
-    static generateGeneratorList(amount, rand, length = 8)
+    static generateGeneratorList(amount, rand, length = 10)
     {
         let gen = [];
         for(let i = 0; i < amount; i++)
